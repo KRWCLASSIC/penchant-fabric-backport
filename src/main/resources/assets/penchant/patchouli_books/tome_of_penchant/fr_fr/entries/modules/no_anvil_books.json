@@ -1,0 +1,21 @@
+{
+    "name": "Pas de Livres à l'Enclume",
+    "icon": "minecraft:anvil",
+    "category": "penchant:modules",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Les livres enchantés ne peuvent plus être appliqués aux objets dans l'$(#7A2FBF)enclume$(), car les étagères ciselées sont la manière prévue d'utiliser les livres enchantés.$(br2)Vous pouvez toujours combiner deux outils à l'enclume comme d'habitude.$(br2)$(italic)Recommande fortement Refonte de la Table.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Combinaison bloquée",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/anvil_blocked.png"
+            ],
+            "text": "Combiner un outil avec un livre enchanté à l'enclume ne fonctionne plus lorsque ce module est activé."
+        }
+    ]
+}

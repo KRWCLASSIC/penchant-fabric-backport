@@ -1,0 +1,20 @@
+{
+    "name": "Introduction",
+    "icon": "minecraft:enchanted_book",
+    "category": "penchant:basics",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Penchant$() est une refonte de l'enchantement, centrée sur le $(#7A2FBF)gain de niveaux d'enchantement par l'usage$().$(br2)Au lieu de farmer de l'XP en espérant un bon hasard, il vous suffit d'aller $(italic)utiliser$() vos outils - comme vous alliez le faire de toute façon."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ce tome documente tout ce que fait le mod, d'après son design original.$(br2)La mécanique principale est toujours active. Le reste des fonctionnalités est réparti en $(#7A2FBF)$(l:penchant:modules/overview)Modules$(/l)$() que vous pouvez activer ou désactiver par monde."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Crédits$()$(br)Mod original $(bold)Penchant$() par $(#7A2FBF)ThePotatoArchivist$().$(br)Portage NeoForge non officiel par $(#7A2FBF)WoXayZ$().$(br2)Sous licence LGPL-3.0-or-later. Ce portage n'est ni affilié ni approuvé par l'auteur original."
+        }
+    ]
+}

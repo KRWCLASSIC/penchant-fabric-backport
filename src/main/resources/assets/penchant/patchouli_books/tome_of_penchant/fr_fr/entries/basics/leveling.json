@@ -1,0 +1,29 @@
+{
+    "name": "Progresser par l'usage",
+    "icon": "minecraft:experience_bottle",
+    "category": "penchant:basics",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Tous les enchantements commencent au niveau un.$() Vous les faites monter en $(#7A2FBF)utilisant$() l'objet enchanté.$(br2)\"L'usage\" désigne toute action qui réduirait normalement la durabilité : $(li)miner $(li)attaquer $(li)subir des dégâts (pour les armures)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Chaque point de durabilité perdu ajoute de la progression à $(italic)chaque$() enchantement de l'objet. Quand la barre d'un enchantement se remplit, il $(#7A2FBF)monte d'un niveau$() - avec un son et des particules - puis la barre se réinitialise, jusqu'au niveau maximum.$(br2)Les objets à forte durabilité demandent un peu plus de progression par niveau."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Barres de progression",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/progress_tooltip.png"
+            ],
+            "text": "Maintenez $(#7A2FBF)Ctrl gauche$() (configurable) pour afficher une barre de progression pour chaque enchantement dans l'infobulle."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Notes$()$(br)$(li)Les enchantements à niveau unique n'affichent pas de barre.$(li)Les objets sans durabilité peuvent progresser s'ils sont dans $(#7A2FBF)#penchant:max_level_enchantments$() (harnais, armures de cheval, armures de nautilus).$(li)Les objets avec durabilité utilisent le composant $(#7A2FBF)penchant:enchantment_progress_cost_factor$(); sinon, le coût dépend de la durabilité max.$(li)Les options client (affichage, indice de touche, largeur de barre) sont dans la config du mod."
+        }
+    ]
+}

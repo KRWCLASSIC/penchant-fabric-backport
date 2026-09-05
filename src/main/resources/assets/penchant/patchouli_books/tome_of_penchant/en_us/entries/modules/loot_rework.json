@@ -1,0 +1,37 @@
+{
+    "name": "Loot Rework",
+    "icon": "minecraft:chest",
+    "category": "penchant:modules",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Reorganizes which enchantments exist and where you get them, so basic enchantments are easy to obtain while special ones are harder to find.$(br2)$(italic)Recommends Table Rework.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Common$()$(br)Basic power boosts. In the enchanting table by default; also from random loot and mob equipment.$(br2)Efficiency, Protection, Sharpness, Unbreaking, Power, Piercing, Quick Charge, Impaling, Loyalty, Lure."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Uncommon$()$(br)Specialized or auxiliary effects. Bought from villagers, and found on random loot and mob spawn equipment.$(br2)Aqua Affinity, Feather Falling, the Protections, Smite, Bane of Arthropods, Sweeping Edge, Knockback, Punch, Density, Breach, Looting, Luck of the Sea."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Rare$()$(br)Unique, magical abilities found in $(italic)specific structure loot$(), random loot, and mob equipment.$(br2)Frost Walker, Fire Aspect, Flame, Silk Touch, Fortune, Lunge, Respiration, Depth Strider, Channeling, Riptide, Thorns, Infinity, Multishot."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Rare Finds",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/loot_book.png"
+            ],
+            "text": "A rare enchanted book waiting in structure loot."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Unique$()$(br)Only from their special sources (unchanged from vanilla):$(br)$(li)Soul Speed - piglin bartering $(li)Swift Sneak - ancient city $(li)Wind Burst - ominous vault$(br2)Also: zombies can spawn with iron pickaxes, with the same enchant chance as swords and shovels."
+        }
+    ]
+}

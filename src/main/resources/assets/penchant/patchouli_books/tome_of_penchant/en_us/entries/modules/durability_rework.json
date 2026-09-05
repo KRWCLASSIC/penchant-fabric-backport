@@ -1,0 +1,25 @@
+{
+    "name": "Durability Rework",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "penchant:modules",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Mending is removed.$() Instead, $(#7A2FBF)Unbreaking$() now has $(bold)5 levels$(), and $(#7A2FBF)Unbreaking V$() makes the tool $(italic)unbreakable$() - but you have to work your way there!"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Damage chance per level$()$(br)$(li)None: 100% $(li)I: 100% $(li)II: 75% $(li)III: 50% $(li)IV: 25% $(li)$(#7A2FBF)V: 0% (unbreakable)$()$(br2)Items that already have Mending keep it, but it no longer functions."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Unbreakable",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/unbreaking.png"
+            ],
+            "text": "A sword with Unbreaking V, marked as Unbreakable."
+        }
+    ]
+}

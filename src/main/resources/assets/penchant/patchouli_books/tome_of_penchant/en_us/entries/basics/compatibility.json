@@ -1,0 +1,24 @@
+{
+    "name": "Other Mods & Tags",
+    "icon": "minecraft:writable_book",
+    "category": "penchant:basics",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Penchant is $(#7A2FBF)tag- and data-driven$(), so it plays well with mods that $(bold)add$() enchantments: their enchantments level up through usage just like vanilla ones, with no patch needed."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Two enchantment tags let packs fine-tune behavior:$(br2)$(li)$(#7A2FBF)#penchant:no_leveling$() - applied at full level, never gains progress.$(li)$(#7A2FBF)#penchant:disabled$() - removed from the enchanting table."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "If $(#7A2FBF)Max Protection$() is installed, Protection, Fire Protection, Blast Protection, and Projectile Protection can be combined on the same piece in the Penchant table, not only on the anvil."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Heads up$()$(br)Mods that $(bold)replace$() the enchanting or anvil mechanics themselves may conflict. In most cases, disabling the relevant $(l:penchant:modules/overview)Module$(/l) lets the other mod work as normal."
+        }
+    ]
+}

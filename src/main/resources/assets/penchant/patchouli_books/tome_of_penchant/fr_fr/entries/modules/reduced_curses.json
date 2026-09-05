@@ -1,0 +1,12 @@
+{
+    "name": "Malédictions réduites",
+    "icon": "minecraft:cobweb",
+    "category": "penchant:modules",
+    "sortnum": 7,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Les enchantements malédiction (Malédiction du lien éternel, Malédiction de disparition) ne se trouvent que sur l'$(#7A2FBF)équipement des mobs$().$(br2)$(italic)Désactivé par défaut. Plus cohérent avec Refonte du butin.$()"
+        }
+    ]
+}

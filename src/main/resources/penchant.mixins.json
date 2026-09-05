@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "archives.tater.penchant.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "anvil.AnvilMenuMixin",
+    "drops.DrownedMixin",
+    "drops.MobMixin",
+    "drops.SkeletonTrapGoalMixin",
+    "effect.DigDurabilityEnchantmentMixin",
+    "leveling.CreativeModeTabsMixin",
+    "leveling.EnchantedBookItemMixin",
+    "leveling.EnchantmentHelperMixin",
+    "leveling.ItemStackMixin",
+    "loot.EnchantmentHelperLootMixin",
+    "loot.EnchantRandomlyFunctionMixin",
+    "table.EnchantingTableBlockMixin"
+  ],
+  "client": [
+    "client.BitmapProviderMixin",
+    "leveling.EnchantmentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

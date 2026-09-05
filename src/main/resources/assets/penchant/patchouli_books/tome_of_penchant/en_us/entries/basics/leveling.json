@@ -1,0 +1,29 @@
+{
+    "name": "Leveling Through Usage",
+    "icon": "minecraft:experience_bottle",
+    "category": "penchant:basics",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)All enchantments start at level one.$() You raise them by $(#7A2FBF)using$() the enchanted item.$(br2)\"Usage\" means any action that would normally reduce durability: $(li)mining $(li)attacking $(li)taking damage (for armor)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Every point of durability damage adds progress to $(italic)each$() enchantment on the item. When an enchantment's progress bar fills up, it $(#7A2FBF)levels up by one$() - with a sound and a burst of particles - and the bar resets, until it is maxed out.$(br2)Higher-tier items (more max durability) need a bit more progress per level."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Progress Bars",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/progress_tooltip.png"
+            ],
+            "text": "Hold $(#7A2FBF)Left Ctrl$() (configurable) to reveal a progress bar for every enchantment in an item's tooltip."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Notes$()$(br)$(li)Single-level enchantments don't show a progress bar.$(li)Items without durability can still level up if they are in $(#7A2FBF)#penchant:max_level_enchantments$() (harnesses, horse armor, nautilus armor).$(li)Durability items use the $(#7A2FBF)penchant:enchantment_progress_cost_factor$() component; if absent, progress cost scales from max durability.$(li)Client options (progress display, key hint, bar width) live in the mod's config."
+        }
+    ]
+}

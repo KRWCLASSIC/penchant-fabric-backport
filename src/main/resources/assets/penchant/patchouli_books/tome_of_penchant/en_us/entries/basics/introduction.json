@@ -1,0 +1,20 @@
+{
+    "name": "Introduction",
+    "icon": "minecraft:enchanted_book",
+    "category": "penchant:basics",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Penchant$() is a rework of enchanting, centered around $(#7A2FBF)leveling up enchantments through usage$().$(br2)Instead of grinding for XP and hoping for good RNG, all you need to do to improve your tools is go out and $(italic)use$() them - like you were going to anyway."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This tome documents everything the mod does, based on the original design.$(br2)The core mechanic is always active. The rest of the features are split into $(#7A2FBF)$(l:penchant:modules/overview)Modules$(/l)$() you can enable or disable per world."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Credits$()$(br)Original mod $(bold)Penchant$() by $(#7A2FBF)ThePotatoArchivist$().$(br)Unofficial NeoForge port by $(#7A2FBF)WoXayZ$().$(br2)Licensed under LGPL-3.0-or-later. This port is not affiliated with or endorsed by the original author."
+        }
+    ]
+}

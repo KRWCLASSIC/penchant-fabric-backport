@@ -1,0 +1,8 @@
+﻿{
+  "pack": {
+    "description": {
+      "translate": "dataPack.penchant.guaranteed_drops.description"
+    },
+    "pack_format": 15
+  }
+}

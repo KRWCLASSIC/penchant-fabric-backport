@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "penchant",
+	"version": "${version}",
+	"name": "Penchant",
+	"description": "Minecraft 1.20.1 Fabric port by KRWCLASSIC (Fiverr order).\nA rework of enchanting, centered around leveling up enchantments through usage",
+	"authors": [
+		"ThePotatoArchivist",
+		"KRWCLASSIC"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/penchant",
+		"sources": "https://github.com/KRWCLASSIC/penchant-fabric-backport",
+		"issues": "https://github.com/KRWCLASSIC/penchant-fabric-backport/issues"
+	},
+	"license": "LGPL-3.0-or-later",
+	"icon": "assets/penchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"archives.tater.penchant.Penchant"
+		],
+		"client": [
+			"archives.tater.penchant.PenchantClient"
+		]
+	},
+	"mixins": [
+		"penchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"patchouli": "*",
+		"item-descriptions": "*"
+	}
+}

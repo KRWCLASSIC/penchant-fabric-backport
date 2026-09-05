@@ -1,0 +1,14 @@
+{
+  "values": [
+    "minecraft:efficiency",
+    "minecraft:protection",
+    "minecraft:sharpness",
+    "minecraft:unbreaking",
+    "minecraft:power",
+    "minecraft:piercing",
+    "minecraft:quick_charge",
+    "minecraft:impaling",
+    "minecraft:loyalty",
+    "minecraft:lure"
+  ]
+}

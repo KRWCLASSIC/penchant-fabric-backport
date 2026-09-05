@@ -1,0 +1,19 @@
+{
+    "name": "book.penchant.tome_of_penchant",
+    "landing_text": "book.penchant.tome_of_penchant.landing",
+    "subtitle": "book.penchant.tome_of_penchant.subtitle",
+    "creative_tab": "minecraft:tools_and_utilities",
+    "use_resource_pack": true,
+    "dont_generate_book": true,
+    "custom_book_item": "penchant:tome_of_penchant",
+    "book_texture": "penchant:textures/gui/book/tome_of_penchant.png",
+    "model": "penchant:tome_of_penchant",
+    "index_icon": "penchant:tome_of_penchant",
+    "nameplate_color": "AB5CF2",
+    "header_color": "7A2FBF",
+    "link_color": "AB5CF2",
+    "link_hover_color": "D6A8FF",
+    "progress_bar_color": "AB5CF2",
+    "progress_bar_background": "3D1F52",
+    "version": "2"
+}

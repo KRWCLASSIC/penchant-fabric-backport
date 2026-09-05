@@ -1,0 +1,16 @@
+{
+    "name": "Vanilla Enchanting",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "penchant:basics",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Even without the $(l:penchant:modules/table_rework)Table Rework$(/l) module, Penchant changes vanilla enchanting: $(#7A2FBF)every enchantment applied at the table starts at level 1$(), never a random higher level.$(br2)From there, use the item normally and let $(l:penchant:basics/leveling)Leveling Through Usage$(/l) raise it."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The vanilla enchanting table UI and RNG slot options still work - only the resulting enchantment levels are capped to 1 (except enchantments tagged $(#7A2FBF)#penchant:no_leveling$()).$(br2)For full control over which enchantment you get, enable Table Rework."
+        }
+    ]
+}

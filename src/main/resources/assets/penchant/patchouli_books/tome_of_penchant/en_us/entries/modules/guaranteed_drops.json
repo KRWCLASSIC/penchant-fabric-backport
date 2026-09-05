@@ -1,0 +1,21 @@
+{
+    "name": "Guaranteed Drops",
+    "icon": "minecraft:iron_sword",
+    "category": "penchant:modules",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Mobs that spawn with enchanted equipment are $(#7A2FBF)guaranteed to drop it$() when killed by a player or wolf (as in vanilla).$(br2)This lets you move those enchantments onto books and apply them to your own gear. Also applies to all tridents.$(br2)$(italic)Makes more sense with Loot Rework.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Enchanted Loot",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/guaranteed_drops.png"
+            ],
+            "text": "A mob wielding an enchanted weapon you can claim."
+        }
+    ]
+}

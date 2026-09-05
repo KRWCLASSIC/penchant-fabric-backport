@@ -1,0 +1,25 @@
+{
+    "name": "Bookshelf Placement",
+    "icon": "minecraft:bookshelf",
+    "category": "penchant:modules",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Chiseled bookshelves and lecterns now count towards the table's bookshelf power, based on how many books they hold.$(br2)$(#7A2FBF)3 books = 1 vanilla bookshelf.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "There is also no longer a requirement to keep the space between shelf and table empty, and shelves can be placed anywhere in a $(#7A2FBF)7x4x7 area$() centered on the table (1 below, 2 above)."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Valid Positions",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/bookshelf_placement.png"
+            ],
+            "text": "Bookshelves packed around a table showing which positions count."
+        }
+    ]
+}

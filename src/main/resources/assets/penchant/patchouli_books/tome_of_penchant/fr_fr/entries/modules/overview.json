@@ -1,0 +1,29 @@
+{
+    "name": "À propos des modules",
+    "icon": "minecraft:chiseled_bookshelf",
+    "category": "penchant:modules",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Au-delà du système de progression, les fonctionnalités de Penchant sont organisées en $(#7A2FBF)modules$(), chacun fourni sous forme de datapack intégré activable indépendamment."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Configurer les modules$()$(br)Activez-les dans l'écran $(#7A2FBF)Packs de données$() à la création d'un monde, ou plus tard avec la commande $(#7A2FBF)/datapack$(). Un mod de menu comme Datapack/Gamerule Menus fonctionne aussi.$(br2)Certains modules vont mieux ensemble ; ces recommandations sont indiquées sur chaque page."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Packs de données",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/datapacks.png"
+            ],
+            "text": "Chaque module Penchant apparaît comme un pack de données à part dans l'écran de création de monde."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Activés par défaut$()$(br)$(li)Refonte de la Table $(li)Placement des Étagères $(li)Refonte de la Durabilité $(li)Refonte du Butin $(li)Pas de Livres à l'Enclume $(li)Butin Garanti$(br2)$(italic)Désactivé par défaut$()$(br)$(li)Malédictions Réduites $(li)Bibliothécaires aléatoires"
+        }
+    ]
+}

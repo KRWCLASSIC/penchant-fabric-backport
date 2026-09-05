@@ -1,0 +1,24 @@
+{
+    "name": "Autres mods & tags",
+    "icon": "minecraft:writable_book",
+    "category": "penchant:basics",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Penchant est piloté par $(#7A2FBF)tags et données$(), il s'entend donc bien avec les mods qui $(bold)ajoutent$() des enchantements : ceux-ci montent en niveau par l'usage comme ceux du jeu de base, sans aucun patch."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Deux tags d'enchantement permettent d'ajuster le comportement :$(br2)$(li)$(#7A2FBF)#penchant:no_leveling$() - appliqué à plein niveau, ne gagne jamais de progression.$(li)$(#7A2FBF)#penchant:disabled$() - retiré de la table d'enchantement."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Si $(#7A2FBF)Max Protection$() est installé, Protection, Protection contre le feu, Protection contre les explosions et Protection contre les projectiles peuvent être combinées sur la même pièce dans la table Penchant, pas seulement à l'enclume."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)À noter$()$(br)Les mods qui $(bold)remplacent$() la mécanique d'enchantement ou d'enclume peuvent entrer en conflit. Dans la plupart des cas, désactiver le $(l:penchant:modules/overview)Module$(/l) concerné laisse l'autre mod fonctionner normalement."
+        }
+    ]
+}

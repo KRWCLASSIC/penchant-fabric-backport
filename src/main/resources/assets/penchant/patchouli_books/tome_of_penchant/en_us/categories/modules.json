@@ -1,0 +1,6 @@
+{
+    "name": "Modules",
+    "description": "Optional features, each shipped as a datapack you can toggle when creating or editing a world.",
+    "icon": "minecraft:chiseled_bookshelf",
+    "sortnum": 1
+}

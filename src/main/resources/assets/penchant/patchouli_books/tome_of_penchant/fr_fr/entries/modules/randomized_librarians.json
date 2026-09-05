@@ -1,0 +1,16 @@
+{
+    "name": "Bibliothécaires aléatoires",
+    "icon": "minecraft:enchanted_book",
+    "category": "penchant:modules",
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Une fois activé, les bibliothécaires vendent un $(#7A2FBF)livre enchanté avec un enchantement échangeable aléatoire$() à chaque achat - plus un livre fixe pour toute la vie du villageois.$(br2)L'échange coûte toujours des émeraudes plus un livre vierge, avec les prix vanilla selon le niveau du bibliothécaire."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Niveaux d'échange$()$(br)$(li)Novice : 15 émeraudes, 1 utilisation$(li)Apprenti : 18 émeraudes, 1 utilisation$(li)Compagnon : 20 émeraudes, 2 utilisations$(li)Expert : 24 émeraudes, 3 utilisations$(br2)$(italic)Désactivé par défaut.$() Activez le datapack $(#7A2FBF)Bibliothécaires aléatoires$(). Se marie bien avec la $(l:penchant:modules/loot_rework)Refonte du butin$(/l)."
+        }
+    ]
+}

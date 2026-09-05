@@ -1,0 +1,16 @@
+{
+    "name": "Randomized Librarians",
+    "icon": "minecraft:enchanted_book",
+    "category": "penchant:modules",
+    "sortnum": 8,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "When enabled, librarian villagers sell an $(#7A2FBF)enchanted book with a random tradeable enchantment$() each time you purchase it - not a fixed book for the rest of the villager's life.$(br2)The trade still costs emeralds plus a plain book, and respects vanilla librarian tier pricing."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Trade tiers$()$(br)$(li)Novice: 15 emeralds, 1 use$(li)Apprentice: 18 emeralds, 1 use$(li)Journeyman: 20 emeralds, 2 uses$(li)Expert: 24 emeralds, 3 uses$(br2)$(italic)Off by default.$() Enable the $(#7A2FBF)Randomized Librarians$() datapack. Works well with $(l:penchant:modules/loot_rework)Loot Rework$(/l) so villagers stay a source of discovery rather than a checklist."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "minecraft:aqua_affinity",
+    "minecraft:feather_falling",
+    "minecraft:fire_protection",
+    "minecraft:blast_protection",
+    "minecraft:projectile_protection",
+    "minecraft:smite",
+    "minecraft:bane_of_arthropods",
+    "minecraft:sweeping",
+    "minecraft:knockback",
+    "minecraft:punch",
+    "minecraft:looting",
+    "minecraft:luck_of_the_sea"
+  ]
+}

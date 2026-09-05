@@ -1,0 +1,65 @@
+{
+    "name": "Table Rework",
+    "icon": "minecraft:enchanting_table",
+    "category": "penchant:modules",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "The enchanting table now lets you $(#7A2FBF)choose individual enchantments$() instead of gambling.$(br2)Each option has an XP cost and a required number of books nearby, and costs $(#7A2FBF)1 lapis lazuli$().$(br2)$(italic)Strongly recommends Bookshelf Placement. Includes guiding advancements.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "The Table",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/enchanting_table.png"
+            ],
+            "text": "A list of enchantments with their XP cost and book requirement."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Unlocking enchantments$()$(br)Enchantments not offered by default can be $(#7A2FBF)unlocked$() by placing the matching enchanted books in chiseled bookshelves near the table."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Unlocking",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/unlock_bookshelf.png"
+            ],
+            "text": "Enchanted books in a chiseled bookshelf near the table."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Unknown Enchantments",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/locked_enchantment.png"
+            ],
+            "text": "Locked options show mystery glyphs until you place the matching enchanted book on a nearby shelf."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Extracting enchantments$()$(br)Place a $(#7A2FBF)grindstone$() within the bookshelf radius to $(italic)remove$() enchantments from an item and store them onto books - great for reusing rare enchantments you find."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Extraction",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/extract_grindstone.png"
+            ],
+            "text": "A grindstone placed among the bookshelves near an enchanting table."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Extract Mode",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/extract_ui.png"
+            ],
+            "text": "Put a book in the ingredient slot (instead of lapis) to pull enchantments off the item."
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "name": "Placement des Étagères",
+    "icon": "minecraft:bookshelf",
+    "category": "penchant:modules",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Les étagères ciselées et les lutrins comptent maintenant dans la puissance de la table, selon le nombre de livres qu'ils contiennent.$(br2)$(#7A2FBF)3 livres = 1 étagère classique.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "De plus, il n'est plus nécessaire de laisser l'espace vide entre l'étagère et la table, et les étagères peuvent être placées n'importe où dans une zone de $(#7A2FBF)7x4x7$() centrée sur la table (1 dessous, 2 dessus)."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Positions valides",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/bookshelf_placement.png"
+            ],
+            "text": "Des étagères empilées autour d'une table montrant les positions qui comptent."
+        }
+    ]
+}

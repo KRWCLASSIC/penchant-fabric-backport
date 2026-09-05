@@ -1,0 +1,16 @@
+{
+    "name": "Enchantement vanilla",
+    "icon": "minecraft:lapis_lazuli",
+    "category": "penchant:basics",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Même sans le module $(l:penchant:modules/table_rework)Refonte de la Table$(/l), Penchant modifie l'enchantement vanilla : $(#7A2FBF)chaque enchantement appliqué à la table commence au niveau 1$(), jamais à un niveau aléatoire plus élevé.$(br2)Ensuite, utilisez l'objet normalement et laissez la $(l:penchant:basics/leveling)Progression par l'usage$(/l) le faire monter."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "L'interface et le RNG de la table vanilla fonctionnent toujours - seuls les niveaux obtenus sont plafonnés à 1 (sauf les enchantements taggés $(#7A2FBF)#penchant:no_leveling$()).$(br2)Pour choisir précisément quel enchantement appliquer, activez Refonte de la Table."
+        }
+    ]
+}

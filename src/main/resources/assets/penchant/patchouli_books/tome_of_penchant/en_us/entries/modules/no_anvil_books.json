@@ -1,0 +1,21 @@
+{
+    "name": "No Anvil Books",
+    "icon": "minecraft:anvil",
+    "category": "penchant:modules",
+    "sortnum": 5,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Enchanted books can no longer be applied to items in the $(#7A2FBF)anvil$(), since chiseled bookshelves are the intended way to use enchanted books.$(br2)You can still combine two tools in the anvil as usual.$(br2)$(italic)Strongly recommends Table Rework.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Blocked Combination",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/anvil_blocked.png"
+            ],
+            "text": "Combining a tool with an enchanted book in an anvil no longer works when this module is enabled."
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "name": "Refonte de la Table",
+    "icon": "minecraft:enchanting_table",
+    "category": "penchant:modules",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "La table d'enchantement vous laisse désormais $(#7A2FBF)choisir chaque enchantement$() au lieu de miser au hasard.$(br2)Chaque option a un coût en XP et un nombre de livres requis à proximité, et coûte $(#7A2FBF)1 lapis-lazuli$().$(br2)$(italic)Recommande fortement Placement des Étagères. Inclut des progrès pour guider.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "La Table",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/enchanting_table.png"
+            ],
+            "text": "Une liste d'enchantements avec leur coût en XP et le nombre de livres requis."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Débloquer des enchantements$()$(br)Les enchantements non proposés par défaut se $(#7A2FBF)débloquent$() en plaçant les livres enchantés correspondants dans des étagères ciselées près de la table."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Déblocage",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/unlock_bookshelf.png"
+            ],
+            "text": "Des livres enchantés dans une étagère ciselée près de la table."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Enchantements inconnus",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/locked_enchantment.png"
+            ],
+            "text": "Les options verrouillées affichent des glyphes mystérieux tant que le livre correspondant n'est pas sur une étagère voisine."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Extraire des enchantements$()$(br)Placez une $(#7A2FBF)meule$() dans le rayon des étagères pour $(italic)retirer$() les enchantements d'un objet et les stocker sur des livres - idéal pour réutiliser les enchantements rares trouvés."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Extraction",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/extract_grindstone.png"
+            ],
+            "text": "Une meule placée parmi les étagères près d'une table d'enchantement."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Mode extraction",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/extract_ui.png"
+            ],
+            "text": "Mettez un livre dans l'emplacement d'ingrédient (à la place du lapis) pour retirer les enchantements de l'objet."
+        }
+    ]
+}

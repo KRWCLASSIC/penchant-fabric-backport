@@ -1,0 +1,37 @@
+{
+    "name": "Refonte du Butin",
+    "icon": "minecraft:chest",
+    "category": "penchant:modules",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Réorganise les enchantements existants et l'endroit où on les obtient : les enchantements de base sont faciles à avoir, tandis que les plus spéciaux sont plus rares.$(br2)$(italic)Recommande Refonte de la Table.$()"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Communs$()$(br)Améliorations de base. Dans la table par défaut ; aussi dans le butin aléatoire et l'équipement des monstres.$(br2)Efficacité, Protection, Tranchant, Solidité, Puissance, Perforation, Charge Rapide, Empalement, Loyauté, Appât."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Peu communs$()$(br)Effets spécialisés ou secondaires. Achetés aux villageois, trouvés dans le butin aléatoire et l'équipement d'apparition des monstres.$(br2)Affinité Aquatique, Chute Amortie, les Protections, Châtiment, Fléau des Arthropodes, Fauchage, Recul, Frappe, Densité, Percée, Butin, Chance de la Mer."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Rares$()$(br)Capacités uniques et magiques, trouvées dans le $(italic)butin de structures spécifiques$(), le butin aléatoire et l'équipement des monstres.$(br2)Marche Glaciale, Aura de Feu, Flammes, Toucher de Soie, Fortune, Fente, Respiration, Agilité Aquatique, Canalisation, Ricochet, Épines, Infinité, Multi-tir."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Trouvailles rares",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/loot_book.png"
+            ],
+            "text": "Un livre enchanté rare attendant dans le butin d'une structure."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(#7A2FBF)$(bold)Uniques$()$(br)Seulement via leurs sources spéciales (inchangé) :$(br)$(li)Vitesse des Âmes - troc des piglins $(li)Furtivité - cité antique $(li)Rafale - coffre-fort sinistre$(br2)Aussi : les zombies peuvent apparaître avec des pioches en fer, avec la même chance d'être enchantées que les épées et pelles."
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Butin garanti",
+    "icon": "minecraft:iron_sword",
+    "category": "penchant:modules",
+    "sortnum": 6,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Les mobs qui apparaissent avec un équipement enchanté le $(#7A2FBF)lâchent à coup sûr$() lorsqu'ils sont tués par un joueur ou un loup (comme en vanilla).$(br2)Cela permet de transférer ces enchantements sur des livres et de les appliquer à votre propre équipement. S'applique aussi à tous les tridents.$(br2)$(italic)Plus cohérent avec Refonte du butin.$()"
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Butin enchanté",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/guaranteed_drops.png"
+            ],
+            "text": "Un mob brandissant une arme enchantée que vous pouvez récupérer."
+        }
+    ]
+}

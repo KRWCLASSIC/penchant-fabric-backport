@@ -1,0 +1,29 @@
+{
+    "name": "About Modules",
+    "icon": "minecraft:chiseled_bookshelf",
+    "category": "penchant:modules",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Beyond the core leveling system, Penchant's features are organized into $(#7A2FBF)modules$(), each shipped as a built-in datapack you can enable or disable independently."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Configuring modules$()$(br)Toggle them in the $(#7A2FBF)Data Packs$() screen when creating a world, or later with the $(#7A2FBF)/datapack$() command. A menu mod such as Datapack/Gamerule Menus also works.$(br2)Some modules make more sense together; these soft recommendations are noted on each page."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Data Packs",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/datapacks.png"
+            ],
+            "text": "Each Penchant module appears as its own datapack in the world creation screen."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(italic)Enabled by default$()$(br)$(li)Table Rework $(li)Bookshelf Placement $(li)Durability Rework $(li)Loot Rework $(li)No Anvil Books $(li)Guaranteed Drops$(br2)$(italic)Off by default$()$(br)$(li)Reduced Curses $(li)Randomized Librarians"
+        }
+    ]
+}

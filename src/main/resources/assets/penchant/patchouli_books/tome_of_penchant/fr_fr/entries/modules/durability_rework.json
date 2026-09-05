@@ -1,0 +1,25 @@
+{
+    "name": "Refonte de la Durabilité",
+    "icon": "minecraft:diamond_pickaxe",
+    "category": "penchant:modules",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Le Raccommodage est retiré.$() À la place, $(#7A2FBF)Solidité$() a désormais $(bold)5 niveaux$(), et $(#7A2FBF)Solidité V$() rend l'outil $(italic)incassable$() - mais il faut y parvenir !"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(bold)Chance de dégât par niveau$()$(br)$(li)Aucun : 100% $(li)I : 100% $(li)II : 75% $(li)III : 50% $(li)IV : 25% $(li)$(#7A2FBF)V : 0% (incassable)$()$(br2)Les objets ayant déjà Raccommodage le conservent, mais il ne fonctionne plus."
+        },
+        {
+            "type": "patchouli:image",
+            "title": "Incassable",
+            "border": true,
+            "images": [
+                "penchant:textures/gui/book/unbreaking.png"
+            ],
+            "text": "Une épée avec Solidité V, marquée comme Incassable."
+        }
+    ]
+}
