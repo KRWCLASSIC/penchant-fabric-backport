@@ -32,8 +32,6 @@ bin/
 
 run/
 src/main/generated/.cache/
-*-sources/
-.oppositeloaderport/
 
 # java
 
