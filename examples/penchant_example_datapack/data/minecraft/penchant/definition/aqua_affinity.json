@@ -1,0 +1,8 @@
+{
+  "progress_cost_factor": {
+    "base": 75,
+    "per_level": 25
+  },
+  "experience_cost": 4,
+  "book_requirement": 20
+}
