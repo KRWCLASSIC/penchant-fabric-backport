@@ -4,9 +4,12 @@ import archives.tater.penchant.Penchant;
 import archives.tater.penchant.PenchantmentDefinition;
 import archives.tater.penchant.menu.PenchantmentMenu;
 
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.fabricmc.fabric.api.networking.v1.S2CPlayChannelEvents;
+import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
@@ -45,6 +48,26 @@ public final class PenchantNetworking {
                 if (enchantment != null) menu.handleEnchant(enchantment);
             });
         });
+
+        // When a client registers support for SYNC_DEFINITIONS (channel negotiation complete):
+        S2CPlayChannelEvents.REGISTER.register((handler, sender, server, channels) -> {
+            if (channels.contains(SYNC_DEFINITIONS)) {
+                server.execute(() -> {
+                    if (handler.player != null) {
+                        sendSyncDefinitions(handler.player);
+                    }
+                });
+            }
+        });
+
+        // Also try on player join in case channels were already ready (e.g. singleplayer/integrated)
+        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> {
+            server.execute(() -> {
+                if (handler.player != null) {
+                    sendSyncDefinitions(handler.player);
+                }
+            });
+        });
     }
 
     public static void registerClient() {
@@ -75,6 +98,10 @@ public final class PenchantNetworking {
             }
             client.execute(() -> PenchantmentDefinition.setClientDefinitions(map));
         });
+
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
+            PenchantmentDefinition.clearClientDefinitions();
+        });
     }
 
     public static void sendSelectEnchantment(Enchantment enchantment) {
@@ -93,15 +120,27 @@ public final class PenchantNetworking {
     }
 
     public static void sendSyncDefinitions(ServerPlayer player) {
+        if (player == null || player.connection == null) {
+            return;
+        }
+        try {
+            if (!ServerPlayNetworking.canSend(player, SYNC_DEFINITIONS)) {
+                return;
+            }
+        } catch (Throwable ignored) {
+            return;
+        }
         Map<ResourceLocation, PenchantmentDefinition> definitions = PenchantmentDefinition.getAllResolvedDefinitions();
         FriendlyByteBuf buf = PacketByteBufs.create();
         buf.writeVarInt(definitions.size());
         for (Map.Entry<ResourceLocation, PenchantmentDefinition> entry : definitions.entrySet()) {
             buf.writeResourceLocation(entry.getKey());
-            buf.writeVarInt(entry.getValue().experienceCost());
-            buf.writeVarInt(entry.getValue().bookRequirement());
-            buf.writeVarInt(entry.getValue().progressCostFactor().base());
-            buf.writeVarInt(entry.getValue().progressCostFactor().perLevel());
+            PenchantmentDefinition def = entry.getValue();
+            buf.writeVarInt(def.experienceCost());
+            buf.writeVarInt(def.bookRequirement());
+            PenchantmentDefinition.Cost cost = def.progressCostFactor();
+            buf.writeVarInt(cost != null ? cost.base() : 1);
+            buf.writeVarInt(cost != null ? cost.perLevel() : 1);
         }
         ServerPlayNetworking.send(player, SYNC_DEFINITIONS, buf);
     }

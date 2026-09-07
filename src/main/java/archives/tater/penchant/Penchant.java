@@ -8,7 +8,6 @@ import archives.tater.penchant.registry.PenchantItems;
 import archives.tater.penchant.registry.PenchantMenus;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -39,7 +38,6 @@ public class Penchant implements ModInitializer {
         ResourceManagerHelper.get(PackType.SERVER_DATA).registerReloadListener(new PenchantmentDefinitionLoader());
 
         CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> PenchantCommand.register(dispatcher));
-        ServerPlayConnectionEvents.JOIN.register((handler, sender, server) -> PenchantNetworking.sendSyncDefinitions(handler.player));
 
         ModContainer container = FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow();
         registerBuiltinResourcePack("table_rework", container);

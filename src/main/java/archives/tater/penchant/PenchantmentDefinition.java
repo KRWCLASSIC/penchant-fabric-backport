@@ -130,7 +130,7 @@ public record PenchantmentDefinition(int experienceCost, int bookRequirement, Co
     }
 
     public static synchronized PenchantmentDefinition getDefinition(Enchantment enchantment) {
-        if (!archives.tater.penchant.network.PenchantNetworking.isServerRunning()) {
+        if (!CLIENT_SYNCED_DEFINITIONS.isEmpty()) {
             ResourceLocation id = BuiltInRegistries.ENCHANTMENT.getKey(enchantment);
             if (id != null && CLIENT_SYNCED_DEFINITIONS.containsKey(id)) {
                 return CLIENT_SYNCED_DEFINITIONS.get(id);
@@ -183,6 +183,11 @@ public record PenchantmentDefinition(int experienceCost, int bookRequirement, Co
     public static synchronized void setClientDefinitions(Map<ResourceLocation, PenchantmentDefinition> definitions) {
         CLIENT_SYNCED_DEFINITIONS.clear();
         CLIENT_SYNCED_DEFINITIONS.putAll(definitions);
+        RESOLVED_CACHE.clear();
+    }
+
+    public static synchronized void clearClientDefinitions() {
+        CLIENT_SYNCED_DEFINITIONS.clear();
         RESOLVED_CACHE.clear();
     }
 
